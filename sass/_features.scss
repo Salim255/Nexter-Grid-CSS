@@ -1,5 +1,10 @@
-.feature{
-    background-color: $color-grey-light-2;
+.features{
+   // background-color: $color-grey-light-2;
     grid-column:center-start / center-end;//
    // grid-row:4/6 ;
+   margin: 15rem 0;
+
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 6rem;
 }
