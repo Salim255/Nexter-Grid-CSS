@@ -13,7 +13,15 @@
     grid-template-rows: 1fr min-content minmax(min-content,6rem)  1fr;
     grid-template-columns: minmax(min-content, max-content) t;//to take the size needed
     grid-row-gap: 1.5rem;
-    justify-content: center; 
+    justify-content: center;
+    
+    @media only screen and (max-width: $bp-medium){
+        grid-column: 1/-1;
+    } 
+
+    @media only screen and (max-width: $bp-small){
+       padding: 5rem;
+    } 
 
     &__logo{
         height: 3rem;
